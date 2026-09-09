@@ -1,0 +1,372 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+}
+
+
+/* =========================
+   MENÚ DE NAVEGACIÓN
+========================= */
+
+header {
+    background: #1e293b;
+    padding: 15px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: white;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================
+   PORTADA
+========================= */
+
+.inicio {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background: #f1f5f9;
+}
+
+.contenido-inicio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.texto-inicio,
+.imagen-inicio {
+    flex: 1;
+}
+
+.texto-inicio h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.texto-inicio p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.imagen-inicio img {
+    width: 85%;
+    border-radius: 15px;
+    display: block;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.boton,
+.contacto button {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.boton:hover,
+.contacto button:hover {
+    background: #0369a1;
+}
+
+
+/* =========================
+   SECCIONES GENERALES
+========================= */
+
+.seccion {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.seccion h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: justify;
+}
+
+
+/* =========================
+   PRESENTACIÓN DEL PROYECTO
+========================= */
+
+.presentacion-proyecto {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.info-principal {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.info-principal h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.info-principal p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* =========================
+   GALERÍA DEL PROYECTO
+========================= */
+
+.galeria-proyecto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.imagen-proyecto {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.imagen-proyecto:hover {
+    transform: translateY(-8px);
+}
+
+.imagen-proyecto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imagen-proyecto p {
+    padding: 15px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   PROBLEMA
+========================= */
+
+.problema {
+    background: #1e293b;
+    color: white;
+    padding: 70px 15%;
+    text-align: center;
+}
+
+.problema h2 {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   SOLUCIÓN
+========================= */
+
+.caracteristicas {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.card {
+    flex: 1;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+
+/* =========================
+   EQUIPO
+========================= */
+
+.miembros {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.miembro {
+    width: 250px;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.miembro img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    text-align: center;
+    padding: 70px 20px;
+    background: #0f172a;
+    color: white;
+}
+.contacto img{
+        width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contacto p {
+    margin: 20px 0;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenido-inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-inicio h1 {
+        font-size: 35px;
+    }
+
+    .galeria-proyecto {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .caracteristicas {
+        flex-direction: column;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE - CELULAR
+========================= */
+
+@media (max-width: 480px) {
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-inicio h1 {
+        font-size: 28px;
+    }
+
+    .seccion {
+        padding: 50px 5%;
+    }
+
+    .galeria-proyecto {
+        grid-template-columns: 1fr;
+    }
+
+    .imagen-proyecto img {
+        height: auto;
+    }
+
+    .miembro {
+        width: 100%;
+    }
+}
